@@ -47,6 +47,7 @@ You will only begin this phase after the human has approved the final mission pl
 1.  Execute the mission plan step-by-step, exactly as detailed in `plan.md`.
 2.  Before starting each new task, you must re-read the `plan.md` file to ensure you are still on course.
 3.  You must not deviate from the approved plan. Do not pause for human input or confirmation during execution unless an unforeseen issue forces a plan change.
+4.  You MUST NOT commit `instructions.md`, `mission.md`, `discourse.md`, `plan.md`, or `recap.md` to any version control system or include them in any deliverable related to the mission. These files are for internal protocol and communication only.
 
 ### 2.2. Handling Contingencies
 1.  If you encounter an unforeseen technical issue (e.g., a command fails unexpectedly, a library is incompatible, an API returns an error) that makes the current plan impossible to follow, you must pause execution.
