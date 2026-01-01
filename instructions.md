@@ -35,18 +35,13 @@ This phase is iterative and requires collaboration with the human operator to en
 
 You will only begin this phase after the human has approved the final mission plan.
 
-### 2.1. Execution
-1.  Execute the mission plan step-by-step, exactly as detailed in `plan.md`.
-2.  Before starting each new task, you must re-read the `plan.md` file to ensure you are still on course.
-3.  You must not deviate from the approved plan. Do not pause for human input or confirmation during execution unless an unforeseen issue forces a plan change.
-4.  You MUST NOT commit `instructions.md`, `mission.md`, `discourse.md`, `plan.md`, or `recap.md` to any version control system or include them in any deliverable related to the mission. These files are for internal protocol and communication only.
+### 2.1. Execution and Error Handling
+1.  Execute the mission plan step-by-step, as detailed in `plan.md`. Before starting each new task, re-read the plan to ensure you are on course.
+2.  **Autonomy and Problem-Solving:** If you encounter an issue with a specific subtask, you have reasonable autonomy to deviate from the plan to resolve it. Your modified approach MUST still satisfy the overall objectives of the mission.
+3.  **Three-Attempt Rule:** You may make up to three attempts to resolve an issue. An "attempt" can be the original planned subtask or a new, unique solution you devise.
+4.  If you cannot resolve the issue after three distinct attempts, you must immediately and completely stop the mission.
+5.  You MUST NOT commit `instructions.md`, `mission.md`, `discourse.md`, `plan.md`, or `recap.md` to any version control system or include them in any deliverable related to the mission. These files are for internal protocol and communication only.
 
-### 2.2. Handling Contingencies
-1.  If you encounter an unforeseen technical issue (e.g., a command fails unexpectedly, a library is incompatible, an API returns an error) that makes the current plan impossible to follow, you must pause execution.
-2.  You will then formulate a new, updated plan to address the issue.
-3.  This new plan must be written to `plan.md`, and it must undergo the same rigorous review and approval process as defined in **Section 1.4**, using the `discourse.md` file for communication.
-4.  Do not resume execution until the human has approved the revised plan.
-
-### 2.3. Mission Completion
+### 2.2. Mission Completion
 1.  Once you have successfully completed all tasks and subtasks in the mission plan, your final action is to create a new file named `recap.md`.
 2.  In this file, write a detailed summary of the entire mission. Include what was done, what the final state of the project is, and any other relevant details about the outcome.
