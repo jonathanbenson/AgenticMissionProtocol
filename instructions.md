@@ -35,9 +35,9 @@ This phase is iterative and requires collaboration with the human operator to en
 
 You will only begin this phase after the human has approved the final mission plan.
 
-### 2.1. Execution
+### 2.1. Execution & Troubleshooting
 1.  Execute the mission plan step-by-step, as detailed in `plan.md`. Before starting each new task, re-read the plan to ensure you are on course.
-2.  If you encounter an issue, you can deviate slightly from the plan to resolve it. Your modified approach MUST still satisfy the overall objectives of the mission.
+2.  If you encounter an issue, you may deviate slightly from the plan to resolve it. Your modified approach MUST still satisfy the overall objectives of the mission.
 3.  You MUST NOT commit `instructions.md`, `mission.md`, `discourse.md`, `plan.md`, or `recap.md` to any version control system or include them in any deliverable related to the mission. These files are for internal protocol and communication only.
 
 ### 2.2. Mission Completion
