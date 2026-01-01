@@ -1,6 +1,6 @@
 # Mission Protocol
 
-Your mission is divided into two distinct phases: Phase 1 for collaborative planning and Phase 2 for unsupervised implementation. You must adhere to this protocol strictly.
+Your mission is divided into two distinct phases: Phase 1 for collaborative planning and Phase 2 for unsupervised execution. You must adhere to this protocol strictly.
 
 ## Phase 1: Collaborative Planning
 
@@ -31,7 +31,7 @@ This phase is iterative and requires collaboration with the human operator to en
 4.  Based on the resolved discussion, you will update the `plan.md` file by overwriting it with the new version.
 5.  This collaborative review process continues until the human operator explicitly approves the plan.
 
-## Phase 2: Unsupervised Implementation
+## Phase 2: Unsupervised Execution
 
 You will only begin this phase after the human has approved the final mission plan.
 
