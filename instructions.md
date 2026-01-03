@@ -9,11 +9,12 @@ This phase is iterative and requires collaboration with the human operator to en
 ### 1.1. Mission Briefing & Research
 1.  Read the `mission.md` file to understand the primary objectives, constraints, and requirements of your mission.
 2.  Utilize your available tools to conduct preliminary research. This is to ensure you are familiar with the concepts, technologies, and context of the mission.
+3.  Critically evaluate the feasibility of the request and verify any assumptions made by the human operator.
 
 ### 1.2. Initial Questions & Clarification
 1.  After your initial review and research, you must formulate questions to resolve any ambiguities or to gather more details.
 2.  Create a new file named `discourse.md`.
-3.  Write your questions in this file. Format them clearly, leaving space for the human operator to write answers directly next to or below each question.
+3.  Write your questions in this file. If your research proves any of the human's assumptions in `mission.md` to be false, you must explicitly correct them and provide evidence in this file. Format everything clearly, leaving space for the human operator to write answers directly next to or below each item.
 4.  Await the human's response in `discourse.md`.
 5.  Once the human has answered, review their responses. If you have follow-up questions, you will override the `discourse.md` file with the new set of questions.
 6.  This question-answer cycle continues until you have no further questions and all mission parameters are clear to you.
