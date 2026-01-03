@@ -13,7 +13,7 @@ The process is governed by the `instructions.md` file and relies on a set of mar
 ### Phase 1: Collaborative Planning
 
 1.  **Mission Briefing & Research**: The agent starts by reading a `mission.md` file that you, the human operator, create. It then uses its tools to conduct preliminary research to ensure it understands the mission's context and requirements.
-2.  **Q&A**: The agent asks clarifying questions about the mission in a `discourse.md` file. It also investigates your assumptions and provides corrections if they are found to be false. You provide answers in the same file. This cycle continues until the agent has all the information it needs.
+2.  **Q&A**: The agent asks clarifying questions about the mission in a `discourse.md` file. It also investigates your assumptions, providing corrections and requesting your approval for them if they are found to be false. You provide answers in the same file. This cycle continues until the agent has all the information it needs.
 3.  **Plan Development**: The agent creates a detailed `plan.md`, breaking the mission down into atomic tasks and subtasks.
 4.  **Plan Review**: You review the `plan.md`. Any feedback or required changes are discussed in the `discourse.md` file. The agent updates the plan until you give final approval.
 
