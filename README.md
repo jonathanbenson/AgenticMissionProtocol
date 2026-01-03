@@ -4,7 +4,7 @@
 
 This repository contains a detailed instruction set (`instructions.md`) designed to guide an agentic AI through a structured, two-phase mission. The protocol ensures robust planning, clear communication, and autonomous execution, making it ideal for complex tasks managed via a command-line interface (CLI).
 
-The core philosophy is to spend significant time in a **Collaborative Planning** phase with a human operator to create a detailed, atomic plan. Once the human approves the plan, the agent enters an **Unsupervised Execution** phase where it has the autonomy to complete the mission without further intervention, except in cases of persistent failure.
+The core philosophy is to spend significant time in a **Collaborative Planning** phase with a human operator to create a detailed, atomic plan. Once the human approves the plan, the agent enters an **Unsupervised Execution** phase where it has the autonomy to complete the mission without further intervention.
 
 ## How It Works
 
@@ -21,7 +21,6 @@ The process is governed by the `instructions.md` file and relies on a set of mar
 
 1.  **Execution**: The agent autonomously executes the approved `plan.md` step-by-step.
 2.  **Problem-Solving**: If an issue occurs, the agent has the autonomy to try and resolve it by deviating from the specific planned step, as long as the solution still meets the mission's goals.
-3.  **Failure Condition**: If the agent fails to achieve a task's objective after three distinct attempts, it will halt the entire mission.
 4.  **Recap**: Upon successful completion of all tasks, the agent will generate a `recap.md` file summarizing everything that was done.
 
 ## How to Use
