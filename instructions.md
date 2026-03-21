@@ -27,7 +27,7 @@ This phase is iterative and requires collaboration with the human operator to en
 
 ### 1.4. Plan Review & Approval
 1.  After you have written the initial `plan.md`, the human operator will review it.
-2.  The human will provide feedback, ask questions, or request modifications by writing in the `discourse.md` file, or by adding inline HTML comments directly inside `plan.md` (e.g., `<!-- Feedback: ... -->`).
+2.  The human will provide feedback, ask questions, or request modifications by writing in the `discourse.md` file, or by adding inline HTML comments directly inside `plan.md` (e.g., `<!-- example comment -->`).
 3.  You will review their feedback across both files. If you need to ask clarifying questions about their feedback, write your follow-up questions in `discourse.md`. The human will answer them there.
 4.  Based on the resolved discussion, you will update the `plan.md` file by overwriting it with the new version (removing the resolved feedback comments in the process).
 5.  This collaborative review process continues until the human operator explicitly approves the plan.
