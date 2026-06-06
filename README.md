@@ -8,20 +8,20 @@ The core philosophy is to spend significant time in a **Collaborative Planning**
 
 ## How It Works
 
-The process is governed by the `instructions.md` file and relies on a set of markdown files for communication between the human and the AI agent.
+The process is governed by the `instructions.md` file. All communication between the human and the AI agent happens directly through the **chat interface**.
 
 ### Phase 1: Collaborative Planning
 
 1.  **Mission Briefing & Research**: The agent starts by reading a `mission.md` file that you, the human operator, create. It then uses its tools to conduct preliminary research to ensure it understands the mission's context and requirements.
-2.  **Q&A**: The agent asks clarifying questions about the mission in a `discourse.md` file. It also investigates your assumptions, providing corrections and requesting your approval for them if they are found to be false. You provide answers in the same file. This cycle continues until the agent has all the information it needs.
-3.  **Plan Development**: The agent creates a detailed `plan.md`, breaking the mission down into atomic tasks and subtasks.
-4.  **Plan Review**: You review the `plan.md`. Any feedback or required changes are discussed in the `discourse.md` file. The agent updates the plan until you give final approval.
+2.  **Q&A**: The agent asks clarifying questions directly in the chat. It also investigates your assumptions, providing corrections and requesting your approval for them if they are found to be false. You respond in the chat. This cycle continues until the agent has all the information it needs.
+3.  **Plan Development**: The agent creates a detailed `plan.md`, breaking the mission down into atomic tasks and subtasks, and notifies you via the chat when it is ready for review.
+4.  **Plan Review**: You review the `plan.md`. Any feedback or required changes are discussed in the chat. The agent updates the plan until you give final approval through the chat.
 
 ### Phase 2: Unsupervised Execution
 
 1.  **Execution**: The agent autonomously executes the approved `plan.md` step-by-step.
 2.  **Problem-Solving**: If an issue occurs, the agent has the autonomy to try and resolve it by deviating from the specific planned step, as long as the solution still meets the mission's goals.
-3.  **Protocol Discipline**: The agent is instructed NEVER to commit protocol-specific files (`instructions.md`, `mission.md`, `discourse.md`, `plan.md`, or `recap.md`) to version control.
+3.  **Protocol Discipline**: The agent is instructed NEVER to commit protocol-specific files (`instructions.md`, `mission.md`, `plan.md`, or `recap.md`) to version control.
 4.  **Recap**: Upon successful completion of all tasks, the agent will generate a `recap.md` file summarizing everything that was done.
 
 ## How to Use
@@ -29,10 +29,10 @@ The process is governed by the `instructions.md` file and relies on a set of mar
 1.  **Define Your Mission**: Create a `mission.md` file in your project directory. Clearly define the goals, requirements, constraints, and any other relevant information for the agent.
 2.  **Provide the Protocol**: When you start your agentic AI CLI, provide the contents of `instructions.md` as its initial system prompt or first instruction. This tells the agent to follow the mission protocol.
 3.  **Collaborate**:
-    - Look for the agent to create a `discourse.md` file with questions. Answer them.
-    - Review the `plan.md` file when the agent creates it.
-    - Provide feedback in `discourse.md` until the plan is perfect.
-    - Approve the plan by stating so in `discourse.md`.
+    - The agent will ask clarifying questions in the chat. Answer them there.
+    - Review the `plan.md` file when the agent notifies you it is ready.
+    - Provide feedback through the chat until the plan is perfect.
+    - Approve the plan by stating so in the chat.
 4.  **Observe**: Once you approve the plan, the agent will begin execution. You can monitor its progress, but no further interaction is needed unless it reports a mission failure.
 5.  **Review**: Once the mission is complete, read the `recap.md` for a full summary of the work performed.
 
@@ -40,6 +40,5 @@ The process is governed by the `instructions.md` file and relies on a set of mar
 
 -   `instructions.md`: The master instruction set for the AI agent.
 -   `mission.md`: **(Human-created)** Details the mission objectives.
--   `discourse.md`: **(Agent-created)** Used for Q&A and feedback between human and agent.
 -   `plan.md`: **(Agent-created)** The detailed, step-by-step mission plan.
 -   `recap.md`: **(Agent-created)** The final summary of the completed mission.
