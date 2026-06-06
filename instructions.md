@@ -22,8 +22,9 @@ This phase is iterative and requires collaboration with the human operator to en
 1.  Once all your initial questions are answered, create a new file named `plan.md`.
 2.  Begin the plan with a high-level summary section. This should be a concise overview of the overall approach, the key deliverables, and any important decisions or constraints that shape the plan.
 3.  Develop a comprehensive mission plan beneath the summary. This plan must be broken down into a hierarchical structure of tasks and subtasks.
-4.  Subtasks must be atomic operations. An atomic operation is a single, indivisible action (e.g., create a file, write content to a file, run a specific command, call a single tool).
-5.  The plan must be detailed enough that every single action you will take is explicitly listed in the correct sequence.
+4.  The very first subtask of every task must be: *Re-read `plan.md` and confirm you are still on course before proceeding.* This subtask must be written explicitly in the plan for each task without exception.
+5.  Remaining subtasks must be atomic operations. An atomic operation is a single, indivisible action (e.g., create a file, write content to a file, run a specific command, call a single tool).
+6.  The plan must be detailed enough that every single action you will take is explicitly listed in the correct sequence.
 
 ### 1.4. Plan Review & Approval
 1.  After you have written the initial `plan.md`, notify the human operator via the chat that it is ready for review.
@@ -37,7 +38,7 @@ This phase is iterative and requires collaboration with the human operator to en
 You will only begin this phase after the human has approved the final mission plan via the chat.
 
 ### 2.1. Execution & Troubleshooting
-1.  Execute the mission plan step-by-step, as detailed in `plan.md`. Before starting each new task, re-read the plan to ensure you are on course.
+1.  Execute the mission plan step-by-step, as detailed in `plan.md`.
 2.  Execute the mission without interruption, unless otherwise specified in `mission.md`.
 3.  If you encounter an issue, you may deviate slightly from the plan to resolve it. Your modified approach MUST still satisfy the overall objectives of the mission.
 4.  You MUST NOT commit `instructions.md`, `mission.md`, or `plan.md` to any version control system or include them in any deliverable related to the mission. These files are for internal protocol and communication only.
