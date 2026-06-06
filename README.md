@@ -21,8 +21,8 @@ The process is governed by the `instructions.md` file. All communication between
 
 1.  **Execution**: The agent autonomously executes the approved `plan.md` step-by-step.
 2.  **Problem-Solving**: If an issue occurs, the agent has the autonomy to try and resolve it by deviating from the specific planned step, as long as the solution still meets the mission's goals.
-3.  **Protocol Discipline**: The agent is instructed NEVER to commit protocol-specific files (`instructions.md`, `mission.md`, `plan.md`, or `recap.md`) to version control.
-4.  **Recap**: Upon successful completion of all tasks, the agent will generate a `recap.md` file summarizing everything that was done.
+3.  **Protocol Discipline**: The agent is instructed NEVER to commit protocol-specific files (`instructions.md`, `mission.md`, or `plan.md`) to version control.
+4.  **Recap**: Upon successful completion of all tasks, the agent will send a detailed recap via the chat summarizing everything that was done.
 
 ## How to Use
 
@@ -34,11 +34,10 @@ The process is governed by the `instructions.md` file. All communication between
     - Provide feedback through the chat until the plan is perfect.
     - Approve the plan by stating so in the chat.
 4.  **Observe**: Once you approve the plan, the agent will begin execution. You can monitor its progress, but no further interaction is needed unless it reports a mission failure.
-5.  **Review**: Once the mission is complete, read the `recap.md` for a full summary of the work performed.
+5.  **Review**: Once the mission is complete, the agent will send a full summary recap in the chat.
 
 ## File Reference
 
 -   `instructions.md`: The master instruction set for the AI agent.
 -   `mission.md`: **(Human-created)** Details the mission objectives.
 -   `plan.md`: **(Agent-created)** The detailed, step-by-step mission plan.
--   `recap.md`: **(Agent-created)** The final summary of the completed mission.
