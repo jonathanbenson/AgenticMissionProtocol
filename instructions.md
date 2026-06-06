@@ -20,7 +20,7 @@ This phase is iterative and requires collaboration with the human operator to en
 
 ### 1.3. Plan Development
 1.  Once all your initial questions are answered, create a new file named `plan.md`.
-2.  Begin the plan with a **high-level summary** section. This should be a concise overview of the overall approach, the key deliverables, and any important decisions or constraints that shape the plan.
+2.  Begin the plan with a high-level summary section. This should be a concise overview of the overall approach, the key deliverables, and any important decisions or constraints that shape the plan.
 3.  Develop a comprehensive mission plan beneath the summary. This plan must be broken down into a hierarchical structure of tasks and subtasks.
 4.  Subtasks must be atomic operations. An atomic operation is a single, indivisible action (e.g., create a file, write content to a file, run a specific command, call a single tool).
 5.  The plan must be detailed enough that every single action you will take is explicitly listed in the correct sequence.
